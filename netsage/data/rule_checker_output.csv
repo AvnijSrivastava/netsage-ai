@@ -1,0 +1,31 @@
+case_id,category,rule_findings,num_findings
+C001,VLAN,NO_DETERMINISTIC_MATCH,0
+C002,VLAN,"SUSPECT_VLAN_ASSIGNMENT: port is in VLAN 999, which is commonly an unused/default VLAN in these labs",1
+C003,VLAN,NO_DETERMINISTIC_MATCH,0
+C004,VLAN,NO_DETERMINISTIC_MATCH,0
+C005,Gateway,GATEWAY_MISMATCH: PC default gateway 192.168.10.254 does not match any router interface IP found (192.168.10.1),1
+C006,Gateway,NO_DETERMINISTIC_MATCH,0
+C007,Gateway,INTERFACE_DOWN: GigabitEthernet0/0.20 is administratively down,1
+C008,Gateway,"DUPLICATE_IP: 192.168.30.50 claimed by 2 different MAC addresses (00E0.5678.BBBB, 00E0.1234.AAAA)",1
+C009,DHCP,NO_DETERMINISTIC_MATCH,0
+C010,DHCP,NO_DETERMINISTIC_MATCH,0
+C011,DHCP,NO_DETERMINISTIC_MATCH,0
+C012,DHCP,NO_DETERMINISTIC_MATCH,0
+C013,DNS,NO_DETERMINISTIC_MATCH,0
+C014,DNS,NO_DETERMINISTIC_MATCH,0
+C015,DNS,NO_DETERMINISTIC_MATCH,0
+C016,DNS,NO_DETERMINISTIC_MATCH,0
+C017,Routing,MISSING_ROUTE: routing table shows only directly connected networks; no static/dynamic route present for the destination referenced in the symptom,1
+C018,Routing,NO_DETERMINISTIC_MATCH,0
+C019,Routing,NO_DETERMINISTIC_MATCH,0
+C020,Routing,NO_DETERMINISTIC_MATCH,0
+C021,ACL,ACL_IMPLICIT_DENY_RISK: ACL has permit statement(s) with no visible catch-all rule; traffic not matching a permit will silently hit the implicit 'deny ip any any',1
+C022,ACL,NO_DETERMINISTIC_MATCH,0
+C023,ACL,ACL_IMPLICIT_DENY_RISK: ACL has permit statement(s) with no visible catch-all rule; traffic not matching a permit will silently hit the implicit 'deny ip any any',1
+C024,ACL,NO_DETERMINISTIC_MATCH,0
+C025,NAT,NAT_OUTSIDE_MISSING: 'ip nat inside' is configured but no 'ip nat outside' interface is present in the evidence,1
+C026,NAT,NO_DETERMINISTIC_MATCH,0
+C027,NAT,NAT_OUTSIDE_MISSING: 'ip nat inside' is configured but no 'ip nat outside' interface is present in the evidence,1
+C028,Wireless,NO_DETERMINISTIC_MATCH,0
+C029,Wireless,NO_DETERMINISTIC_MATCH,0
+C030,Wireless,NO_DETERMINISTIC_MATCH,0
