@@ -66,7 +66,7 @@ netsage/
    agreement rate, and count of cases with a deterministic rule hit, plus
    two bar charts.
 
-## Running it yourself
+## Running it
 
 ```bash
 pip install openpyxl --break-system-packages   # if not already installed
@@ -78,28 +78,17 @@ python generate_human_review.py     # -> data/human_review.csv
 python build_dashboard.py           # -> data/dashboard.xlsx
 ```
 
-## Safety rule (Human Review) — how it's enforced, not just claimed
+## Safety rule
 
 - The prompt schema hardcodes `"human_review_required": true` on every
   single response — this is a fixed field, not something the model can
   opt out of.
 - `human_review.csv` is a **separate artifact from the AI output**. Every
-  one of the 30 cases has an explicit reviewer status; there is no
-  "auto-accept" path anywhere in the pipeline.
+  one of the 30 cases has an explicit reviewer status.
 - `rule_checker.py` runs independently of the AI and is used as a
   cross-check, so the AI's word alone is never the only signal a
   reviewer has.
 - `responsible_ai_log.md` documents *specifically where and why* the AI
   was wrong, including patterns (e.g., defaulting to guesses when
   evidence was thin), so the review process produces a feedback loop for
-  improving the prompt — not just a rubber stamp.
-
-## What's left for you to do
-
-- Record the demo video using `demo_script.md` as a shot list (5–10 min).
-- If your course wants live Packet Tracer footage rather than narrated
-  file walkthroughs, build the C024 (or any) scenario in Packet Tracer
-  to match the case in `cases.csv` before recording.
-- Fill in team member names/roles above.
-- Optionally add your own additional cases to `generate_cases.py` if your
-  instructor wants more than 30.
+  improving the prompt.
