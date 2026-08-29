@@ -7,8 +7,7 @@ human review** (Accepted / Edited / Rejected) before it is treated as
 final. Nothing is auto-applied to a device.
 
 ## Team
-Fill in: names, roll numbers, and role split (dataset, prompts, checker,
-dashboard, video) for submission.
+Avnij Srivastava - 2305042 - KIIT University
 
 ## Project layout
 
